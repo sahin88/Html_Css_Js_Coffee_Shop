@@ -1,0 +1,380 @@
+* {
+  font-family: "Muli", "sans-serif";
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+body {
+  height: 100vh;
+  object-fit: contain;
+  background: url("images/coffee_shop_3.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* animation: example;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out; */
+}
+
+@keyframes example {
+  0% {
+    background: url("images/coffee_shop_3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  /* /* 25% {
+    background: url("https://p0.pikist.com/photos/361/469/coffee-cup-coffee-coffee-beans-roasted-coffee-beans-coffee-plant-caffeine-beans-benefit-from-stimulant.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  } */
+  50% {
+    background: url("images/coffee_shop_3.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  /*75% {
+    background: url("https://c1.wallpaperflare.com/preview/996/840/24/beans-brown-coffee-coffee-beans.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  } */
+
+  100% {
+    background: url("images/coffee_shop_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 110%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  box-shadow: inset 60px 50px 80px #141414, inset -60px -50px 80px #141414;
+  z-index: -100;
+}
+
+footer {
+  background: #1b1b1b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 60vh;
+  bottom: 0;
+  left: 0;
+}
+
+header {
+  color: white;
+  width: 100%;
+  height: 60px;
+  background: transparent;
+  font-size: 24px;
+  z-index: 100;
+}
+.header_content {
+  width: 100%;
+  height: 100%;
+
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+.logo {
+  flex-grow: 2;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 3%;
+}
+.selections {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 3;
+  align-items: center;
+}
+.search_input {
+  position: relative;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  flex-grow: 3;
+}
+.header_content .selections a {
+  color: white;
+  font-size: 16px;
+}
+.header_content .selections a:hover {
+  background: transparent;
+}
+
+.active {
+  padding: 8px;
+  border: 2px solid white;
+  border-radius: 15px;
+}
+.hamburger_menu {
+  display: none;
+}
+
+.coffe_idioms {
+  position: relative;
+  width: 70%;
+  height: auto;
+  top: 30%;
+  left: 40%;
+  font-size: 30px;
+  color: #fff;
+  z-index: 50;
+}
+
+.search_input input[type="text"] {
+  width: 100%;
+  padding: 10px;
+}
+#ok_btn {
+  background: #da6a44;
+  color: #fff;
+  padding: 6.5px;
+}
+.cart_container {
+  width: 60%;
+  margin: auto;
+}
+.cart_header {
+  color: #fff;
+  border-bottom: 1px solid rgba(157, 157, 157, 0.2);
+  padding: 15px;
+}
+.cart_body {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid rgba(157, 157, 157, 0.2);
+}
+.cart_body_image {
+  width: 70%;
+  flex-grow: 1;
+}
+.cart_body img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.cart_info {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  color: #d9d9d9;
+}
+.cart_info a {
+  color: #da6a44;
+  text-decoration: underline;
+  font-weight: 800;
+  margin: 1%;
+  font-size: 18px;
+}
+.cart_price {
+  font-size: 18px;
+}
+.button_division button {
+  border: 1px solid #da6a44;
+  background: #1b1b1b;
+  margin-top: 15px;
+  padding: 15px;
+  color: #da6a44;
+}
+
+/*  Cardview */
+.cartViewHeader {
+  background: #da6a44;
+  height: 90px;
+  padding-bottom: 20px;
+}
+.cartViewFoot {
+  background: #1b1b1b;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 10vh;
+  bottom: 0;
+  left: 0;
+}
+.option_div {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+#selectOpt {
+  padding: 10px;
+  border: 1px solid #da6a44;
+}
+
+.orderlist_body {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid rgba(157, 157, 157, 0.2);
+  justify-content: space-around;
+  align-items: center;
+  color: #d9d9d9;
+}
+.orderlist__image {
+  width: 30%;
+}
+.orderlist__image img {
+  width: 80%;
+}
+.orderlistOption_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30%;
+  height: 100px;
+}
+.orderlist_tag a {
+  color: #da6a44;
+  text-decoration: underline;
+}
+.unify_head_vs_option {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 1100px) {
+  .hamburger_menu {
+    display: flex;
+    justify-content: space-evenly;
+    width: 35%;
+  }
+
+  .selections {
+    display: none;
+    position: relative;
+    position: absolute;
+    top: 50px;
+    right: -1%;
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    background: #1b1b1b;
+    justify-content: space-evenly;
+    z-index: 100;
+  }
+
+  .header_content {
+    width: 100%;
+    justify-content: space-between;
+  }
+  header {
+    font-size: 14px;
+  }
+  .search_input input[type="text"] {
+    padding: 2px;
+  }
+  .active {
+    border: 2px solid #da6a44;
+    background: #da6a44;
+    width: 100%;
+    padding-left: 30%;
+  }
+
+  .header_content .selections a:hover {
+    width: 100%;
+    padding-left: 30%;
+  }
+  .coffe_idioms {
+    position: relative;
+    width: 80%;
+    height: auto;
+    top: 15%;
+    left: 15%;
+    font-size: 18px;
+  }
+  footer {
+    padding: 25px;
+  }
+  .follow_me_icon {
+    z-index: 50;
+
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    width: 10%;
+    position: relative;
+    top: 20%;
+  }
+  .follow_me_icon i {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 7px;
+  }
+  .fa-twitter {
+    color: #1da1f2;
+  }
+  .fa-facebook-f {
+    color: #4267b2;
+  }
+  .fa-instagram {
+    color: #fd1d1d;
+  }
+  .fa-tiktok {
+    color: #69c9d0;
+  }
+
+  .cart_container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .cart_body {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart_body_image {
+    width: 100%;
+  }
+  .orderlist_tag a {
+    font-size: 12px;
+  }
+  .unify_head_vs_option {
+    flex-direction: column;
+  }
+  #selectOpt {
+    padding: 0px;
+  }
+
+  .orderlistOption_div {
+    width: 30%;
+    height: 50px;
+  }
+  .orderlistOption_div label {
+    font-size: 12px;
+  }
+  .orderlist_price p {
+    font-size: 12px;
+  }
+}
